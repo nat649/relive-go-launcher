@@ -1,0 +1,4 @@
+client_files/
+dist/
+*.dl
+*.bak
