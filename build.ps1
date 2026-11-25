@@ -1,7 +1,8 @@
 ﻿# Script de build & publication d'une nouvelle version Relive:GO sur GitHub
 param(
     [string]$Version = "1.0.0",
-    [switch]$Publish
+    [switch]$Publish,
+    [string]$ClientExe
 )
 
 $ErrorActionPreference = 'Stop'
@@ -21,8 +22,14 @@ Write-Host "Built: $exeOut ($((Get-Item $exeOut).Length) bytes)"
 
 # 2. Refresh client_files & manifest.json
 $cf = Join-Path $root 'client_files'
-if (Test-Path 'D:\SteamLibrary\steamapps\common\csgo legacy\csgo.exe') {
-    Copy-Item 'D:\SteamLibrary\steamapps\common\csgo legacy\csgo.exe' (Join-Path $cf 'csgo.exe') -Force
+if ($ClientExe -and !(Test-Path -LiteralPath $ClientExe -PathType Leaf)) {
+    throw "Client introuvable : $ClientExe"
+}
+if (!$ClientExe) {
+    $ClientExe = 'D:\SteamLibrary\steamapps\common\csgo legacy\csgo.exe'
+}
+if (Test-Path -LiteralPath $ClientExe -PathType Leaf) {
+    Copy-Item -LiteralPath $ClientExe -Destination (Join-Path $cf 'csgo.exe') -Force
 }
 
 $tag = "v$Version"
