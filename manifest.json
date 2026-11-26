@@ -1,35 +1,35 @@
 {
-  "version": "1.0.8",
-  "launcher_version": "1.0.8",
+  "version": "1.0.9",
+  "launcher_version": "1.0.9",
   "gc_server_url": "https://rlgo.specs.qzz.io",
-  "updated_at": "2026-11-25T20:48:14Z",
+  "updated_at": "2026-11-26T22:37:45Z",
   "files": [
     {
       "path": "csgo.exe",
-      "url": "https://github.com/nat649/relive-go-launcher/releases/download/v1.0.8/csgo.exe",
-      "sha256": "da8a45bf4ecfc6d5fc4420accb7a956481d053f0a2db782c28d563c4b6cb2a85",
-      "size": 2350080,
+      "url": "https://github.com/nat649/relive-go-launcher/releases/download/v1.0.9/csgo.exe",
+      "sha256": "2859f95bf78c1e3f4dcfd348d4431ce51e5869a989e90938fc17dd52f18477c7",
+      "size": 2353664,
       "backup": true
     },
     {
       "path": "csgo_gc/config.txt",
-      "url": "https://github.com/nat649/relive-go-launcher/releases/download/v1.0.8/config.txt",
+      "url": "https://github.com/nat649/relive-go-launcher/releases/download/v1.0.9/config.txt",
       "sha256": "e155749139797056e1b0caff5af0baa7c3a9879969d5d2f22d9501690081fbbf",
       "size": 1066,
       "backup": false
     },
     {
       "path": "csgo_gc/items_extra.txt",
-      "url": "https://github.com/nat649/relive-go-launcher/releases/download/v1.0.8/items_extra.txt",
+      "url": "https://github.com/nat649/relive-go-launcher/releases/download/v1.0.9/items_extra.txt",
       "sha256": "c277a54df1b59b8da86d0fcb3e4c9ee28e673f5cf81b8ca306c95ad07d6f1123",
       "size": 31087,
       "backup": false
     },
     {
       "path": "csgo_gc/price_sheet.txt",
-      "url": "https://github.com/nat649/relive-go-launcher/releases/download/v1.0.8/price_sheet.txt",
-      "sha256": "2e970ecbaf677414a3615d5ffefb1c4ad38ba22e56f10f83af1a91f7a8343a4f",
-      "size": 218585,
+      "url": "https://github.com/nat649/relive-go-launcher/releases/download/v1.0.9/price_sheet.txt",
+      "sha256": "a2d95274da3610cc814bc0b5e4853d554be534d1316f568a277f5ed6e2dec0ac",
+      "size": 243560,
       "backup": false
     }
   ]
